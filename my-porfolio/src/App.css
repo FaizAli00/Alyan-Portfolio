@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap');
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-awesome {
+  font-family: 'Font Awesome 6 Pro';
+}
+
+.rotate-45 {
+  transform: matrix(0.71, -0.71, 0.72, 0.69, 0, 0);
+}
+
+.bgCardColor {
+  background: #473f66;
+background: radial-gradient(circle,rgba(71, 63, 102, 1) 0%, rgba(41, 35, 69, 1) 64%);
+}
