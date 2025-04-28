@@ -59,15 +59,15 @@ const About = () => {
           <h4 className="font-bold text-xl text-[#D6DAF0]">Experience</h4>
           <GradientSpinner duration = {3.5} />
         </div>
-        <div className="mb-2">
-          <p className="text-sm text-[#D7D9FF]">2020-present</p>
-          <h5 className="font-bold text-lg text-[#D7D9FF]">Sr. Developer</h5>
-          <p className="text-sm text-[#D7D9FF]">Google.com</p>
+        <div className="mb-6">
+          <p className="text-sm text-[#D7D9FF]">2020-2023</p>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">UX/UI Designer</h5>
+          <p className="text-sm text-[#D7D9FF]">Franski Interprice</p>
         </div>
         <div>
-          <p className="text-sm text-[#D7D9FF]">2014-2020</p>
-          <h5 className="font-bold text-lg text-[#D7D9FF]">Chiefs of Surgery</h5>
-          <p className="text-sm text-[#D7D9FF]">Microsoft.com</p>
+          <p className="text-sm text-[#D7D9FF]">2024-present</p>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">UX/UI Designer</h5>
+          <p className="text-sm text-[#D7D9FF]">Dot To Dot</p>
         </div>
       </div>
 
@@ -77,31 +77,40 @@ const About = () => {
           <h4 className="font-bold text-xl text-[#D6DAF0]">Education</h4>
           <GradientSpinner duration = {4} />
         </div>
-        <div className="mb-2">
-          <p className="text-sm text-[#D7D9FF]">2013-2014</p>
-          <h5 className="font-bold text-lg text-[#D7D9FF]">MBA in (Management)</h5>
-          <p className="text-sm text-[#D7D9FF]">London Business School</p>
+        <div className="mb-6">
+          <p className="text-sm text-[#D7D9FF]">2021-2023</p>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">Master Degree</h5>
+          <p className="text-sm text-[#D7D9FF]">University Of Arts Lahore</p>
         </div>
         <div>
-          <p className="text-sm text-[#D7D9FF]">2009-2013</p>
-          <h5 className="font-bold text-lg text-[#D7D9FF]">BBA in (Management)</h5>
-          <p className="text-sm text-[#D7D9FF]">London Business School</p>
+          <p className="text-sm text-[#D7D9FF]">2018-2020</p>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">Bachelors Degree</h5>
+          <p className="text-sm text-[#D7D9FF]">University of Arts Lahore</p>
         </div>
       </div>
 
       {/* Follow Me */}
       <div className="border p-6 rounded text-left">
-        <div className="flex justify-between items-center">
-          <h4 className="font-bold text-xl text-[#D6DAF0]">Follow Me</h4>
-          <GradientSpinner duration = {4.5} />
-        </div>
-        <div className="flex gap-4 pt-4">
-          <FaBehance className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
-          <FaLinkedin className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
-          <FaTwitter className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
-          <FaInstagramSquare className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
-        </div>
-      </div>
+  <div className="flex justify-between items-center">
+    <h4 className="font-bold text-xl text-[#D6DAF0]">Follow Me</h4>
+    <GradientSpinner duration={4.5} />
+  </div>
+  <div className="flex gap-4 pt-4">
+    <a href="https://www.behance.net/aliyanali15" target="_blank" rel="noopener noreferrer">
+      <FaBehance className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
+    </a>
+    <a href="https://www.linkedin.com/in/aliyan-ali-374400247/" target="_blank" rel="noopener noreferrer">
+      <FaLinkedin className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+      <FaTwitter className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
+    </a>
+    <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+      <FaInstagramSquare className="w-6 h-6 text-[#D7D9FF] cursor-pointer" />
+    </a>
+  </div>
+</div>
+
     </div>
     </>
     

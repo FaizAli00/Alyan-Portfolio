@@ -23,7 +23,7 @@ const Home = () => {
           <div className="flex flex-wrap max-sm:justify-center gap-4 sm:gap-6 pt-8 sm:pt-10 md:pt-14 pb-6">
             {/* Contact Me Button (Opens Upwork) */}
             <a
-              href="https://www.upwork.com/freelancers/~YOUR_UPWORK_ID"
+              href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center bg-[#93F2FF] font-semibold hover:bg-[#302C4A] hover:text-[#93F2FF] text-[#302C4A] px-6 py-3 rounded-lg transition-all duration-300"
@@ -95,10 +95,10 @@ const Home = () => {
         </div>
 
         {/* Second Column (Image) */}
-        <div className="hidden md:flex p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up delay-200 justify-center items-center">
+        <div className="hidden md:flex sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up delay-200 justify-center items-center">
           <img
             src="/img/profile.png"
-            className="h-[600px] w-full max-w-[400px] object-cover object-center rounded-lg"
+            className="h-[600px] object-cover object-center rounded-lg"
             alt="Aliyan Ali - UI/UX Designer"
           />
         </div>

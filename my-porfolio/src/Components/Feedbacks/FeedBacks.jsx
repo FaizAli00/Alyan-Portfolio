@@ -43,9 +43,10 @@ const feedbacks = [
 
 const FeedBacks = () => {
   const settings = {
-    dots: true,
+    dots: false,
+    arrows: false, // Removes prev/next buttons
     infinite: true,
-    speed: 4000,
+    speed: 6000,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
@@ -64,17 +65,17 @@ const FeedBacks = () => {
  
   return (
     <div className="py-12 bg-[rgb(9,9,37)]">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10 text-[rgba(214,218,240,1)]">What Our Clients Say</h2>
-        <p className=" pb-10 text-center text-[rgba(215,217,255,1)]">With a strong foundation in frontend development and a keen eye for design, <br /> I specialize in creating interactive and responsive web.</p>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6"> {/* Reduced side padding */}
+        <h2 className="text-3xl font-bold text-center mb-6 text-[rgba(214,218,240,1)]">What Our Clients Say</h2>
+        <p className="pb-8 text-center text-[rgba(215,217,255,1)]">With a strong foundation in frontend development and a keen eye for design, <br /> I specialize in creating interactive and responsive web.</p>
         <Slider {...settings}>
           {feedbacks.map((feedback) => (
-            <div key={feedback.id} className="flex justify-center px-2">
-              <div className="flex flex-col items-center text-center bg-[rgb(12,12,38)] p-6 rounded-lg shadow-md w-80 h-72 transition-transform transform hover:scale-105">
+            <div key={feedback.id} className="px-8"> {/* Reduced card padding */}
+              <div className="flex flex-col items-center text-center bg-[rgb(12,12,38)] p-5 rounded-lg shadow-md w-full h-72 transition-transform transform hover:scale-105 mx-1"> {/* Reduced card padding and added mx-1 */}
                 <img
                   src={feedback.image}
                   alt={feedback.name}
-                  className="w-20 h-20 rounded-full mb-4 object-cover"
+                  className="w-16 h-16 rounded-full mb-3 object-cover" // Reduced image size
                 />
                 <h3 className="text-lg font-semibold text-[rgba(214,218,240,1)]">{feedback.name}</h3>
                 <p className="text-gray-500 text-sm mb-2 text-[rgba(215,217,255,1)]">{feedback.position}</p>
