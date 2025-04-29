@@ -46,7 +46,7 @@ const FeedBacks = () => {
     dots: false,
     arrows: false, // Removes prev/next buttons
     infinite: true,
-    speed: 6000,
+    speed: 8000,
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,

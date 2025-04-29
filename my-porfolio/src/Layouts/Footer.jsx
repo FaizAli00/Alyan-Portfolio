@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-black pt-32 px-20 max-sm:p-[18px]" id="contact">
+    <div className="bg-[#111827] pt-32 px-20 max-sm:p-[18px]" id="contact">
       <div className="grid grid-cols-3 max-sm:grid-cols-1 max-sm:text-center max-md:grid-cols-1 gap-6">
         {/* Left Column */}
         <div className="pt-12 md:text-center">

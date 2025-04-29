@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <>
       <div>
-        <div className="bg-[#090925] px-4 md:px-[50px] pt-12 flex justify-center text-center">
+        <div id="services" className="bg-[#090925] px-4 md:px-[50px] pt-12 flex justify-center text-center">
           <div>
             <h4 className="font-bold text-[16px] text-[#93F2FF]">
               My Specializations Services

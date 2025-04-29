@@ -20,3 +20,7 @@
   background: #473f66;
 background: radial-gradient(circle,rgba(71, 63, 102, 1) 0%, rgba(41, 35, 69, 1) 64%);
 }
+
+html {
+  scroll-behavior: smooth;
+}

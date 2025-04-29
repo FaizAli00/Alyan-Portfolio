@@ -18,7 +18,7 @@ const GradientSpinner = ({ duration  }) => {
 const About = () => {
   return (
     <>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-[#090925] p-4 px-[50px]">
+        <div id="about" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-[#090925] p-4 px-[50px]">
       
       {/* About me */}
       <div className="md:col-span-2 rounded border p-6 text-left">

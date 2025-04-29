@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="relative min-h-screen bg-[#090925] p-4 sm:p-6 md:p-8 overflow-hidden">
+    <div id="home" className=" relative min-h-screen bg-[#090925] p-4 sm:p-6 md:p-8 overflow-hidden">
       {/* Main Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 animate-fade-in-up">
         {/* First Column */}

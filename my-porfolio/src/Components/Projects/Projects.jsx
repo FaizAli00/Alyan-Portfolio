@@ -89,7 +89,7 @@ const Projects = () => {
     : projects.filter(project => project.category === activeTab);
 
   return (
-    <div className="px-10 py-8 bg-[#090925]">
+    <div id="projects" className="px-10 py-8 bg-[#090925]">
       {/* Title */}
       <div className="bg-[#090925] px-4 md:px-[50px] pt-12 flex justify-center text-center">
         <div>
