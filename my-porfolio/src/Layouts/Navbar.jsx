@@ -53,7 +53,7 @@ const Navbar = () => {
                 <li key={item.name}>
                   <button
                     onClick={() => handleNavClick(item.link)}
-                    className="text-gray-300 hover:text-[#e2ff61] transition-opacity hover:opacity-50 duration-500 text-base lg:text-xl font-bold"
+                    className="text-[#a855f7] hover:text-[#e2ff61] transition-opacity hover:opacity-50 duration-500 text-base lg:text-xl font-bold"
                   >
                     {item.name}
                   </button>

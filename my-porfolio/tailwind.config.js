@@ -82,6 +82,16 @@ export default {
             opacity: "1",
             transform: "translateY(0)",
           },
+          spin: {
+    '0%': { transform: 'rotate(0deg)' },
+    '100%': { transform: 'rotate(360deg)' },
+  },
+  animation: {
+  'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
+    fadeOut: 'fadeOut 10s ease-in-out forwards',
+    'slow-spin': 'spin 3s linear infinite',
+    spin: 'spin 1s linear infinite',
+},
         },
       },
       transitionDelay: {

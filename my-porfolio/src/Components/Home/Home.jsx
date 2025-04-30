@@ -103,7 +103,7 @@ const Home = () => {
   <img
   src="/img/profile.png"
   alt="Aliyan Ali - UI/UX Designer"
-  className="h-[600px] object-cover object-center rounded-full shadow-[0_10px_40px_rgba(138,43,226,0.6)] transition-transform duration-500 hover:scale-105"
+  className="h-[600px] object-cover object-center  transition-transform duration-500 hover:scale-105"
 />
 </div>
       </div>
