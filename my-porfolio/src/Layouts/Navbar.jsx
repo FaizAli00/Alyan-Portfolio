@@ -34,7 +34,7 @@ const Navbar = () => {
     { name: 'About', link: '#about' },
     { name: 'Services', link: '#services' },
     { name: 'Projects', link: '#projects' },
-    { name: 'Contact', link: '#contact' }, // assuming you'll add this section
+    { name: 'Contact', link: '#contact' },
   ];
 
   return (
@@ -42,16 +42,18 @@ const Navbar = () => {
       <div className="container mx-auto pt-2 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold text-[#cfc9fa] z-50">Aliyan Ali</NavLink>
+          <NavLink to="/" className="text-2xl font-bold text-[#cfc9fa] z-50 transition-opacity hover:opacity-50 hover:text-[#e2ff61] duration-500">
+            Aliyan Ali
+          </NavLink>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-1 justify-center">
-            <ul className="flex space-x-4 lg:space-x-8 px-[50px] bg-[#302C4A] rounded-full h-[52px] p-[10px]">
+            <ul className="flex space-x-4 lg:space-x-8 px-[50px] bg-[#302C4A] border-2 border-purple-500 rounded-full h-[52px] p-[10px]">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <button
                     onClick={() => handleNavClick(item.link)}
-                    className="text-gray-300 hover:text-white transition-colors duration-300 text-base lg:text-lg font-medium"
+                    className="text-gray-300 hover:text-[#e2ff61] transition-opacity hover:opacity-50 duration-500 text-base lg:text-xl font-bold"
                   >
                     {item.name}
                   </button>
@@ -60,18 +62,40 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Hire Me Button */}
+          {/* Animated Hire Me Button - Desktop */}
           <div className="hidden md:block">
-            <a href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f" target="_blank" rel="noopener noreferrer">
-              <button className="bg-[#302C4A] h-[52px] text-[18px] font-medium text-white px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300">
+            <a
+              href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
+            >
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </span>
+              <span className="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
                 Hire Me
-              </button>
+              </span>
+              <span className="relative invisible">Hire Me</span>
             </a>
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button 
+            <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white focus:outline-none z-50"
               aria-label="Toggle menu"
@@ -99,7 +123,11 @@ const Navbar = () => {
                 {item.name}
               </button>
             ))}
-            <a href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="bg-[#302C4A] text-white px-8 py-3 rounded-full text-xl hover:scale-105 transition-transform duration-300 mt-4">
                 Hire Me
               </button>

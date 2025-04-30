@@ -95,13 +95,17 @@ const Home = () => {
         </div>
 
         {/* Second Column (Image) */}
-        <div className="hidden md:flex sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up delay-200 justify-center items-center">
-          <img
-            src="/img/profile.png"
-            className="h-[600px] object-cover object-center rounded-lg"
-            alt="Aliyan Ali - UI/UX Designer"
-          />
-        </div>
+        <div className="hidden md:flex sm:p-6 rounded-xl relative justify-center items-center group animate-fade-in-up delay-200">
+  {/* Background Glow */}
+  <div className="absolute w-[90%] h-[90%] rounded-lg z-0 group-hover:scale-105 transition-transform duration-500" />
+
+  {/* Profile Image */}
+  <img
+  src="/img/profile.png"
+  alt="Aliyan Ali - UI/UX Designer"
+  className="h-[600px] object-cover object-center rounded-full shadow-[0_10px_40px_rgba(138,43,226,0.6)] transition-transform duration-500 hover:scale-105"
+/>
+</div>
       </div>
 
       {/* Image for small and medium screen absolute on right */}
