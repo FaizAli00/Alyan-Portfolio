@@ -64,13 +64,13 @@ const Projects = () => {
 
     {
       id: 10,
-      title: 'Food Delivery App UI',
-      image: '/projects/p20.png',
+      title: 'Real State Homepage Design',
+      image: '/projects/p20.jpg',
       category: 'mobile',
     },
     {
       id: 11,
-      title: 'Analytics SaaS Dashboard',
+      title: 'Landing Page Design',
       image: '/projects/p21.jpg',
       category: 'saas',
     },

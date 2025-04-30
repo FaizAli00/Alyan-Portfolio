@@ -8,7 +8,7 @@ const Home = () => {
         {/* First Column */}
         <div className="p-4 sm:p-6 bg-[#090925] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up delay-100 mt-12 md:mt-24 z-10">
           <div>
-            <span className="text-[40px] sm:text-[50px] md:text-[60px] pt-4 sm:pt-6 font-bold text-green-600">
+            <span className="text-[40px] sm:text-[50px] md:text-[60px] pt-4 sm:pt-6 font-bold text-yellow-500">
               Hi
             </span>
             <h1 className="text-white text-[35px] sm:text-[45px] md:text-[55px] font-semibold leading-[1.2] md:leading-[64px]">

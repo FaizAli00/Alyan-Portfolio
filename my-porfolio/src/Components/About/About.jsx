@@ -27,9 +27,7 @@ const About = () => {
           <GradientSpinner duration = {3} />
         </div>
         <p className="text-[#D7D9FF] text-base md:text-lg leading-7">
-          Freelancers are known for their flexibility in work hours and
-          location. They are responsible <br /> for all aspects of their business, from
-          finding clients and managing projects to handling <br /> administrative tasks.
+        I am a Senior UI/UX and Web Designer specializing in user-centered, conversion-driven, and scalable designs for SaaS platforms, web and mobile apps, and enterprise solutions. My approach goes beyond aesthetics—I create designs that enhance user experience, improve engagement, and drive measurable results.
         </p>
       </div>
 
@@ -40,15 +38,15 @@ const About = () => {
           <GradientSpinner duration = {5} />
         </div>
         <div className="mb-2">
-          <h5 className="font-bold text-lg text-[#D7D9FF]">1050+</h5>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">600+</h5>
           <span className="text-sm text-[#D7D9FF]">Happy Client</span>
         </div>
         <div className="mb-2">
-          <h5 className="font-bold text-lg text-[#D7D9FF]">950+</h5>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">591+</h5>
           <span className="text-sm text-[#D7D9FF]">Successful Projects</span>
         </div>
         <div>
-          <h5 className="font-bold text-lg text-[#D7D9FF]">750+</h5>
+          <h5 className="font-bold text-lg text-[#D7D9FF]">597+</h5>
           <span className="text-sm text-[#D7D9FF]">Complete Project</span>
         </div>
       </div>
@@ -62,7 +60,7 @@ const About = () => {
         <div className="mb-6">
           <p className="text-sm text-[#D7D9FF]">2020-2023</p>
           <h5 className="font-bold text-lg text-[#D7D9FF]">UX/UI Designer</h5>
-          <p className="text-sm text-[#D7D9FF]">Franski Interprice</p>
+          <p className="text-sm text-[#D7D9FF]">Franski Enterprice</p>
         </div>
         <div>
           <p className="text-sm text-[#D7D9FF]">2024-present</p>

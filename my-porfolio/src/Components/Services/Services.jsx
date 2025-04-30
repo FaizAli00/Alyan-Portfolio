@@ -20,8 +20,9 @@ const Services = () => {
               What I Do
             </h1>
             <p className="font-normal text-[16px] leading-7 text-[#D7D9FF] mt-4">
-              Develop comprehensive content strategies tailored to your unique goals <br />
-              and target audience, ensuring that every piece of content.
+            I craft user-friendly and visually engaging interfaces for digital products. By combining <br /> usability principles with clean design, I transform ideas into seamless experiences <br /> through thoughtful wireframes, prototypes, and UI designs.
+
+
             </p>
           </div>
         </div>

@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="container mx-auto pt-2 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold text-white z-50">Portfolio</NavLink>
+          <NavLink to="/" className="text-2xl font-bold text-[#cfc9fa] z-50">Aliyan Ali</NavLink>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-1 justify-center">
