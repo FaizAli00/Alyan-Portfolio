@@ -42,18 +42,18 @@ const Navbar = () => {
       <div className="container mx-auto pt-2 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold text-[#cfc9fa] z-50 transition-opacity hover:opacity-50 hover:text-[#e2ff61] duration-500">
+          <NavLink to="/" className="text-2xl font-bold text-[#ffffff] z-50 transition-opacity hover:opacity-50 hover:text-[#e2ff61] duration-500">
             Aliyan Ali
           </NavLink>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex flex-1 justify-center">
-            <ul className="flex space-x-4 lg:space-x-8 px-[50px] bg-[#302C4A] border-2 border-purple-500 rounded-full h-[52px] p-[10px]">
+            <ul className="flex space-x-4 lg:space-x-8 px-[50px] bg-[#302C4A] rounded-full h-[52px] p-[10px]">
               {navItems.map((item) => (
                 <li key={item.name}>
                   <button
                     onClick={() => handleNavClick(item.link)}
-                    className="text-[#a855f7] hover:text-[#e2ff61] transition-opacity hover:opacity-50 duration-500 text-base lg:text-xl font-bold"
+                    className="text-[#ffffff] hover:text-[#e2ff61] transition-opacity hover:opacity-50 duration-500 text-base lg:text-xl font-bold"
                   >
                     {item.name}
                   </button>
@@ -68,9 +68,9 @@ const Navbar = () => {
               href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group"
+              className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-indigo-600 bg-[#302C4A] transition duration-300 ease-out rounded-full shadow-md group"
             >
-              <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+              <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#302C4A] group-hover:translate-x-0 ease">
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -86,7 +86,7 @@ const Navbar = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">
+              <span className="absolute flex items-center justify-center w-full h-full text-[#ffffff] transition-all duration-300 transform group-hover:translate-x-full ease">
                 Hire Me
               </span>
               <span className="relative invisible">Hire Me</span>

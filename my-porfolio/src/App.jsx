@@ -49,6 +49,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
+            {/* <Route path="/projects/:id" element={<div className='w-full h-screen ' ></div>} /> */}
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/feedbacks" element={<Feedbacks />} />
           </Routes>
