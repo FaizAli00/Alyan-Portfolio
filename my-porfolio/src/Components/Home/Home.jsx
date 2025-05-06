@@ -103,7 +103,7 @@ const Home = () => {
   <img
   src="/img/profile.png"
   alt="Aliyan Ali - UI/UX Designer"
-  className="h-[600px] object-cover object-center  transition-transform duration-500 hover:scale-105"
+  className="h-[600px] object-cover object-center   transition-transform duration-1000 hover:scale-105"
 />
 </div>
       </div>
@@ -111,9 +111,11 @@ const Home = () => {
       {/* Image for small and medium screen absolute on right */}
       <div className="block md:hidden absolute top-20 right-4 sm:right-8">
         <img
-          src="/img/profile.png"
+          src="/img/profile2.png"
           className="h-auto w-[180px] sm:w-[220px] rounded-lg object-cover object-center"
           alt="Aliyan Ali - UI/UX Designer"
+          fetchpriority="high" // Prioritize this image
+          loading="eager"      // Load immediately (not lazy)
         />
       </div>
     </div>
