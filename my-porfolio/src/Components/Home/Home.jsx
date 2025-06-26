@@ -101,7 +101,7 @@ const Home = () => {
 
   {/* Profile Image */}
   <img
-  src="/img/profile2.webp"
+  src="/img/one.png"
   alt="Aliyan Ali - UI/UX Designer"
   width={500}
   height={600}
