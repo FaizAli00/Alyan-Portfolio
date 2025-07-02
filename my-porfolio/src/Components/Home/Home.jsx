@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div id="home" className=" relative min-h-screen bg-[#090925] p-4 sm:p-6 md:p-8 overflow-hidden">
+    <div id="home" className=" relative bg-[#090925] p-4 sm:p-6 md:p-8 overflow-hidden">
       {/* Main Grid Container */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 animate-fade-in-up">
         {/* First Column */}
@@ -111,10 +111,10 @@ const Home = () => {
       </div>
 
       {/* Image for small and medium screen absolute on right */}
-      <div className="block md:hidden absolute top-20 right-4 sm:right-8">
+      <div className="block md:hidden right-4 sm:right-8">
         <img
           src="/img/profile2.png"
-          className="h-auto w-[180px] sm:w-[220px] rounded-lg object-cover object-center"
+          className=" h-[800px] w-[180px] sm:w-[220px] rounded-lg object-cover object-center pb-6"
           alt="Aliyan Ali - UI/UX Designer"
           fetchpriority="high" // Prioritize this image
           loading="eager"      // Load immediately (not lazy)
