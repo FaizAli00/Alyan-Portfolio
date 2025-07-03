@@ -2,126 +2,103 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div id="home" className=" relative bg-[#090925] p-4 sm:p-6 md:p-8 overflow-hidden">
-      {/* Main Grid Container */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 animate-fade-in-up">
-        {/* First Column */}
-        <div className="p-4 sm:p-6 bg-[#090925] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up delay-100 mt-12 md:mt-24 z-10">
-          <div>
-            <span className="text-[40px] sm:text-[50px] md:text-[60px] pt-4 sm:pt-6 font-bold text-yellow-500">
-              Hi
-            </span>
-            <h1 className="text-white text-[35px] sm:text-[45px] md:text-[55px] font-semibold leading-[1.2] md:leading-[64px]">
-              I am <span className="text-yellow-500">Aliyan</span> Ali <br /> UI/UX Designer
-            </h1>
-            <p className="text-white text-[14px] sm:text-[16px] font-normal leading-6 pt-6 sm:pt-8 md:pt-12">
-              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-            </p>
+    <section id="home" className="relative bg-[#090925] px-4 sm:px-6 md:px-8 py-12 md:py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="relative z-10 pt-10">
+            <div className="bg-[#090925]/90 backdrop-blur-sm rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500">
+              <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-yellow-500">
+                Hi, I'm
+              </span>
+              <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-2">
+                <span className="text-yellow-500">Aliyan</span> Ali
+              </h1>
+              <h2 className="text-xl sm:text-2xl md:text-3xl text-white/80 font-medium mb-6">
+                UI/UX Designer & Developer
+              </h2>
+              <p className="text-white/90 text-base sm:text-lg leading-relaxed mb-8">
+                Creating intuitive digital experiences that blend beautiful design 
+                with seamless functionality.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-[#93F2FF] hover:bg-[#302C4A] hover:text-[#93F2FF] text-[#302C4A] font-semibold px-6 py-3 rounded-lg transition-all duration-300 group"
+                >
+                  Hire Me on Upwork
+                  <ArrowIcon className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a
+                  href="/cv/Ali.pdf"
+                  download="Ali.pdf"
+                  className="flex items-center bg-black hover:bg-white hover:text-black text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 group"
+                >
+                  Download Resume
+                  <ArrowIcon className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
           </div>
 
-          {/* Buttons Container */}
-          <div className="flex flex-wrap max-sm:justify-center gap-4 sm:gap-6 pt-8 sm:pt-10 md:pt-14 pb-6">
-            {/* Contact Me Button (Opens Upwork) */}
-            <a
-              href="https://www.upwork.com/freelancers/~01210ebaf5db3c1e0f"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center bg-[#93F2FF] font-semibold hover:bg-[#302C4A] hover:text-[#93F2FF] text-[#302C4A] px-6 py-3 rounded-lg transition-all duration-300"
-            >
-              Hire Me on Upwork
-              <span className="inline-block ml-2 animate-bounce">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7 17L17 7"
-                    stroke="currentColor"
-                    strokeOpacity="0.9"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M7 7H17V17"
-                    stroke="currentColor"
-                    strokeOpacity="0.9"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </a>
-
-            {/* Download CV Button */}
-            <a
-              href="/cv/Ali.pdf"
-              download="Ali.pdf"
-              className="flex items-center bg-black font-semibold hover:bg-white hover:text-black text-white px-6 py-3 rounded-lg transition-all duration-300"
-            >
-              Download my resume
-              <span className="inline-block ml-2 animate-bounce">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7 17L17 7"
-                    stroke="currentColor"
-                    strokeOpacity="0.9"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M7 7H17V17"
-                    stroke="currentColor"
-                    strokeOpacity="0.9"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </a>
+          {/* Profile Image - Desktop */}
+          <div className="hidden md:flex justify-center items-center relative pt-10">
+            {/* Dark Shadow Circle */}
+            {/* <div className="absolute rounded-full bg-gradient-to-br from-[#0a0a1a] via-[#0d1125] to-[#0a0e1a] opacity-90 blur-[50px] -z-10" /> */}
+            
+            {/* Profile Image Circle */}
+            <div className="relative w-[370px] h-[370px] overflow-hidden">
+              <img
+                src="/img/one.png"
+                alt="Aliyan Ali"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Second Column (Image) */}
-        <div className="hidden md:flex sm:p-6 rounded-xl relative justify-center items-center group animate-fade-in-up delay-200">
-  {/* Background Glow */}
-  <div className="absolute w-[90%] h-[90%] rounded-lg z-0 group-hover:scale-105 transition-transform duration-500" />
-
-  {/* Profile Image */}
-  <img
-  src="/img/one.png"
-  alt="Aliyan Ali - UI/UX Designer"
-  width={500}
-  height={600}
-  className="object-cover object-center transition-transform duration-1000 hover:scale-105"
-/>
-</div>
+        {/* Profile Image - Mobile */}
+        <div className="md:hidden flex justify-center mt-12 relative">
+          {/* Dark Shadow Circle */}
+          <div className="absolute w-64 h-64 rounded-full bg-gradient-to-br from-[#0a0a1a] via-[#0d1125] to-[#0a0e1a] opacity-80 blur-[40px] -z-10" />
+          
+          {/* Profile Image Circle */}
+          <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500 shadow-xl group">
+            <img
+              src="/img/profile2.png"
+              alt="Aliyan Ali"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              fetchpriority="high"
+              loading="eager"
+            />
+          </div>
+        </div>
       </div>
-
-      {/* Image for small and medium screen absolute on right */}
-      <div className="block md:hidden right-4 sm:right-8">
-        <img
-          src="/img/profile2.png"
-          className=" h-[800px] w-[180px] sm:w-[220px] rounded-lg object-cover object-center pb-6"
-          alt="Aliyan Ali - UI/UX Designer"
-          fetchpriority="high" // Prioritize this image
-          loading="eager"      // Load immediately (not lazy)
-        />
-      </div>
-    </div>
+    </section>
   );
 };
+
+// Arrow Icon Component
+const ArrowIcon = ({ className }) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className={className}
+  >
+    <path
+      d="M7 17L17 7M17 7H7V17"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
 
 export default Home;

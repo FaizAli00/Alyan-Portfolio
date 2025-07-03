@@ -67,6 +67,11 @@ export default {
         "fade-in-up": "fadeInUp 0.5s ease-out forwards",
         fadeOut: "fadeOut 10s ease-in-out forwards",
         "slow-spin": "spin 3s linear infinite",
+        spin: "spin 1s linear infinite",
+        "pulse-slow": "pulse 6s infinite cubic-bezier(0.4, 0, 0.6, 1)",
+        "glow-slow": "glow 8s infinite alternate",
+        glow: "glow 6s ease-in-out infinite alternate",
+        'rotate-slow': 'rotate 20s linear infinite',
       },
       keyframes: {
         fadeInUp: {
@@ -74,25 +79,27 @@ export default {
             opacity: "0",
             transform: "translateY(20px)",
           },
-          fadeOut: {
-            "0%": { opacity: "1" },
-            "100%": { opacity: "0" },
-          },
           "100%": {
             opacity: "1",
             transform: "translateY(0)",
           },
-          spin: {
-    '0%': { transform: 'rotate(0deg)' },
-    '100%': { transform: 'rotate(360deg)' },
-  },
-  animation: {
-  'fade-in-up': 'fadeInUp 0.5s ease-out forwards',
-    fadeOut: 'fadeOut 10s ease-in-out forwards',
-    'slow-spin': 'spin 3s linear infinite',
-    spin: 'spin 1s linear infinite',
-},
         },
+        fadeOut: {
+          "0%": { opacity: "1" },
+          "100%": { opacity: "0" },
+        },
+        glow: {
+          "0%, 100%": { opacity: "0.08" },
+          "50%": { opacity: "0.15" },
+        },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
       },
       transitionDelay: {
         100: "100ms",

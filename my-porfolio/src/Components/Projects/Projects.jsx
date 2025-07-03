@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { MdArrowOutward, MdClose } from "react-icons/md";
-import { motion, AnimatePresence } from 'framer-motion';
+import { MdArrowOutward } from "react-icons/md";
+import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState('all');
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
 
   const projects = [
     {
@@ -14,9 +14,20 @@ const Projects = () => {
       image: '/projects/p11.webp',
       category: 'web',
       description: 'A complete e-commerce solution with product listings, shopping cart, and secure checkout process. Designed for optimal user experience and conversion rates.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe API', 'Tailwind CSS'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'Product catalog with filters and search',
+        'Shopping cart with persistent storage',
+        'Secure checkout with Stripe integration',
+        'User account management',
+        'Admin dashboard for inventory'
+      ],
+      challenges: 'Implementing real-time inventory updates while maintaining performance during high traffic periods.',
+      solutions: 'Used MongoDB change streams to implement efficient inventory updates without polling the database.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'Fashion Boutique Inc.',
+      role: 'Lead UI/UX Designer & Frontend Developer'
     },
     {
       id: 2,
@@ -24,9 +35,19 @@ const Projects = () => {
       image: '/projects/p10.webp',
       category: 'homepages',
       description: 'Custom Shopify storefront design focusing on brand identity and mobile responsiveness. Increased conversion rates by 35% compared to previous design.',
-      technologies: ['Shopify Liquid', 'JavaScript', 'CSS3', 'GSAP'],
+      technologies: ['Shopify Liquid', 'UI/UX', 'Figma', 'Canva'],
+      features: [
+        'Mobile-first responsive design',
+        'Custom product showcase carousel',
+        'Integrated newsletter signup',
+        'Performance optimized assets'
+      ],
+      challenges: 'Working within Shopify template limitations while delivering custom design.',
+      solutions: 'Created custom sections with Shopify Liquid that maintained editability while achieving design goals.',
       link: '',
-      year: '2022'
+      year: '2022',
+      client: 'Urban Styles Co.',
+      role: 'Frontend Developer'
     },
     {
       id: 3,
@@ -34,9 +55,19 @@ const Projects = () => {
       image: '/projects/p12.webp',
       category: 'web',
       description: 'High-conversion landing page for a premium bicycle dealership. Featured product showcases with 360° views and interactive configuration.',
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Three.js'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Landing Page',],
+      features: [
+        'Interactive 3D bike viewer',
+        'Custom configuration tool',
+        'Dealer locator map',
+        'Test ride booking system'
+      ],
+      challenges: 'Implementing smooth 3D interactions on mobile devices.',
+      solutions: 'Optimized Three.js implementation with fallbacks for lower-powered devices.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'Velocity Bikes',
+      role: 'UI Designer & Frontend Developer'
     },
     {
       id: 4,
@@ -44,9 +75,19 @@ const Projects = () => {
       image: '/projects/p15.webp',
       category: 'mobile',
       description: 'Mobile banking application with secure authentication, transaction history, and budgeting tools. Followed strict financial UX guidelines.',
-      technologies: ['Figma', 'React Native', 'Firebase', 'Biometrics'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'Fingerprint/Face ID login',
+        'Transaction categorization',
+        'Spending analytics',
+        'Bill pay scheduling'
+      ],
+      challenges: 'Meeting banking security requirements while maintaining good UX.',
+      solutions: 'Worked closely with security team to implement auth flows that were both secure and user-friendly.',
       link: '',
-      year: '2022'
+      year: '2022',
+      client: 'First Regional Bank',
+      role: 'UX Designer'
     },
     {
       id: 5,
@@ -54,9 +95,19 @@ const Projects = () => {
       image: '/projects/p5.webp',
       category: 'saas',
       description: 'Analytics dashboard for financial SaaS product. Included customizable widgets, data visualization, and reporting tools.',
-      technologies: ['React', 'D3.js', 'Chart.js', 'Material UI'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe',],
+      features: [
+        'Customizable dashboard layout',
+        'Real-time data visualization',
+        'Exportable reports',
+        'Role-based access control'
+      ],
+      challenges: 'Handling large datasets without performance degradation.',
+      solutions: 'Implemented data sampling and virtualization techniques for smooth rendering.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'Wise Analytics',
+      role: 'Full-stack Developer'
     },
     {
       id: 6,
@@ -64,9 +115,19 @@ const Projects = () => {
       image: '/projects/cover1.webp',
       category: 'saas',
       description: 'Comprehensive admin dashboard for B2B SaaS platform with user management, analytics, and system configuration.',
-      technologies: ['Vue.js', 'Vuetify', 'REST API', 'JWT Auth'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'User management system',
+        'System health monitoring',
+        'Audit logging',
+        'Dark/light mode'
+      ],
+      challenges: 'Creating a flexible system that could adapt to different client needs.',
+      solutions: 'Built modular components that could be enabled/disabled per client requirements.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'AdminSoft Inc.',
+      role: 'Frontend Lead'
     },
     {
       id: 7,
@@ -74,9 +135,19 @@ const Projects = () => {
       image: '/projects/p16.webp',
       category: 'web',
       description: 'Marketing landing page for tech startup with animated sections, testimonial carousel, and lead capture form.',
-      technologies: ['GSAP', 'Tailwind CSS', 'Formik', 'Yup'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Landing Page'],
+      features: [
+        'Scroll-triggered animations',
+        'Interactive demo request form',
+        'Testimonial carousel',
+        'Mobile-optimized performance'
+      ],
+      challenges: 'Creating impactful animations without sacrificing performance.',
+      solutions: 'Used GSAP with will-change properties and optimized asset loading.',
       link: '',
-      year: '2022'
+      year: '2022',
+      client: 'TechNova',
+      role: 'Frontend Developer'
     },
     {
       id: 8,
@@ -84,9 +155,19 @@ const Projects = () => {
       image: '/projects/p17.webp',
       category: 'mobile',
       description: 'Mobile app interface for user profile management with social features and personalized content recommendations.',
-      technologies: ['SwiftUI', 'Core Data', 'CloudKit', 'Lottie'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'Personalized feed algorithm',
+        'Social connection features',
+        'Achievement system',
+        'Dark mode support'
+      ],
+      challenges: 'Syncing data across devices while maintaining performance.',
+      solutions: 'Implemented CloudKit with local Core Data caching for seamless sync.',
       link: '',
-      year: '2021'
+      year: '2021',
+      client: 'ConnectApp',
+      role: 'iOS Developer'
     },
     {
       id: 9,
@@ -94,9 +175,19 @@ const Projects = () => {
       image: '/projects/p18.webp',
       category: 'homepages',
       description: 'Modern homepage design for creative agency with portfolio showcase, client testimonials, and service highlights.',
-      technologies: ['Webflow', 'CSS3', 'JavaScript', 'Swiper.js'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Homepage Design'],
+      features: [
+        'Interactive portfolio grid',
+        'Client logo carousel',
+        'Animated service cards',
+        'CMS-editable content'
+      ],
+      challenges: 'Balancing creative design with Webflow limitations.',
+      solutions: 'Custom JavaScript enhancements combined with Webflow native features.',
       link: '',
-      year: '2022'
+      year: '2022',
+      client: 'PixelPerfect Agency',
+      role: 'Web Designer'
     },
     {
       id: 10,
@@ -104,9 +195,19 @@ const Projects = () => {
       image: '/projects/p20.webp',
       category: 'mobile',
       description: 'Property listing app with map integration, advanced filters, and virtual tour capabilities for real estate agency.',
-      technologies: ['React Native', 'Google Maps API', 'Firebase', 'Redux'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'Interactive property map',
+        'Advanced search filters',
+        'Virtual tour integration',
+        'Favorites system'
+      ],
+      challenges: 'Handling large numbers of property listings efficiently.',
+      solutions: 'Implemented pagination and server-side filtering to optimize performance.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'Prime Properties',
+      role: 'Mobile Developer'
     },
     {
       id: 11,
@@ -114,9 +215,19 @@ const Projects = () => {
       image: '/projects/p21.webp',
       category: 'saas',
       description: 'Conversion-focused landing page for SaaS product with feature highlights, pricing tiers, and demo request form.',
-      technologies: ['Next.js', 'Tailwind CSS', 'Formspree', 'Framer Motion'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'Interactive pricing calculator',
+        'Feature comparison table',
+        'Animated call-to-action',
+        'Form validation'
+      ],
+      challenges: 'Creating clear differentiation between pricing tiers.',
+      solutions: 'Used visual hierarchy and micro-interactions to highlight value propositions.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'SaaSify',
+      role: 'Frontend Developer'
     },
     {
       id: 12,
@@ -124,9 +235,19 @@ const Projects = () => {
       image: '/projects/p22.webp',
       category: 'homepages',
       description: 'Experimental homepage design with scroll-triggered animations and unconventional navigation for creative portfolio.',
-      technologies: ['GSAP', 'ScrollMagic', 'Canvas API', 'CSS Variables'],
+      technologies: ['UI/UX Design', 'Graphic Design', 'Figma', 'Wireframe', 'Canva'],
+      features: [
+        'Parallax scrolling effects',
+        'Dynamic background transitions',
+        'Non-linear navigation',
+        'Motion-responsive elements'
+      ],
+      challenges: 'Making unconventional navigation intuitive.',
+      solutions: 'Added visual cues and progressive disclosure of navigation options.',
       link: '',
-      year: '2023'
+      year: '2023',
+      client: 'Studio Nova',
+      role: 'Creative Developer'
     }
   ];
 
@@ -136,15 +257,8 @@ const Projects = () => {
     ? projects
     : projects.filter(project => project.category === activeTab);
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-    setIsModalOpen(true);
-    document.body.style.overflow = 'hidden';
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-    document.body.style.overflow = 'auto';
+  const openProjectDetails = (project) => {
+    navigate(`/projects/${project.id}`, { state: { project } });
   };
 
   return (
@@ -182,7 +296,7 @@ const Projects = () => {
             key={project.id}
             className="rounded-[10px] border-2 border-[rgba(255,255,255,0.1)] overflow-hidden hover:shadow-lg transition-all bg-[#292345] cursor-pointer group"
             whileHover={{ y: -5 }}
-            onClick={() => openModal(project)}
+            onClick={() => openProjectDetails(project)}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -211,86 +325,6 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
-
-      {/* Project Modal */}
-      <AnimatePresence>
-        {isModalOpen && selectedProject && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-80 backdrop-blur-sm"
-            onClick={closeModal}
-          >
-            <motion.div
-              initial={{ scale: 0.95, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.95, opacity: 0 }}
-              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto bg-[#1a1a2e] rounded-xl shadow-2xl border border-[rgba(255,255,255,0.1)]"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <button
-                onClick={closeModal}
-                className="absolute top-4 right-4 text-gray-400 hover:text-white z-10 bg-[#292345] rounded-full p-2"
-              >
-                <MdClose className="w-6 h-6" />
-              </button>
-
-              <div className="p-6">
-                <div className="relative h-64 md:h-80 w-full mb-6 rounded-lg overflow-hidden">
-                  <img
-                    src={selectedProject.image}
-                    alt={selectedProject.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                <div className="space-y-6">
-                  <div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#93F2FF]">
-                      {selectedProject.title}
-                    </h2>
-                    <p className="text-gray-400">{selectedProject.year}</p>
-                  </div>
-
-                  <div className="bg-[#292345] p-4 rounded-lg">
-                    <h3 className="text-lg font-semibold text-white mb-2">Project Description</h3>
-                    <p className="text-gray-300">{selectedProject.description}</p>
-                  </div>
-
-                  <div className="bg-[#292345] p-4 rounded-lg">
-                    <h3 className="text-lg font-semibold text-white mb-3">Technologies Used</h3>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.technologies.map((tech, index) => (
-                        <motion.span
-                          key={index}
-                          className="px-3 py-1 bg-blue-900 bg-opacity-50 text-blue-200 rounded-full text-sm"
-                          whileHover={{ scale: 1.05 }}
-                        >
-                          {tech}
-                        </motion.span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* <div className="pt-2">
-                    <a
-                      // href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-                    >
-                      View Live Project
-                      <MdArrowOutward className="ml-2" />
-                    </a>
-                  </div> */}
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Services from './Components/Services/Services';
 import Projects from './Components/Projects/Projects';
+import ProjectDetails from './Pages/ProjectDetails'; // New import
 import Pricing from './Components/Prizing/Pricing';
 import Feedbacks from './Components/Feedbacks/FeedBacks';
 import Footer from './Layouts/Footer';
@@ -49,13 +50,14 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
-            {/* <Route path="/projects/:id" element={<div className='w-full h-screen ' ></div>} /> */}
+            <Route path="/projects/:id" element={<ProjectDetails />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/feedbacks" element={<Feedbacks />} />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
+      <Footer />
     </Router>
   );
 }

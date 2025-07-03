@@ -10,8 +10,8 @@ import { SiProton } from "react-icons/si";
 const Services = () => {
   return (
     <>
-      <div>
-        <div id="services" className="bg-[#090925] px-4 md:px-[50px] pt-12 flex justify-center text-center">
+      
+        <div id="services" className="bg-[#090925] px-8 md:px-[50px] pt-12 flex justify-center text-center">
           <div>
             <h4 className="font-bold text-[16px] text-[#93F2FF]">
               My Specializations Services
@@ -30,7 +30,7 @@ const Services = () => {
         <div className="min-h-screen bg-[#090925] flex items-center justify-center p-4 md:p-10 overflow-auto ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
             {/* Service Card 1 */}
-            <div className="max-w-[418px] w-full relative bg-[#292345]  border border-[rgba(255,255,255,0.1)] rounded-[10px] min-h-[250px] p-4 md:p-12 shadow-xl mx-auto transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:brightness-110">
+            <div className="max-w-[418px] w-full relative bg-[#292345] border border-[rgba(255,255,255,0.1)] rounded-[10px] min-h-[250px] p-4 md:p-12 shadow-xl mx-auto transition-all duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:brightness-110">
               <div className="w-full h-full absolute bgCardColor top-0 left-0 rounded-[10px]  " />
 
               
@@ -132,7 +132,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };
