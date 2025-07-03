@@ -14,8 +14,8 @@ const Home = () => {
               <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mt-2">
                 <span className="text-yellow-500">Aliyan</span> Ali
               </h1>
-              <h2 className="text-xl sm:text-2xl md:text-3xl text-white/80 font-medium mb-6">
-                UI/UX Designer & Developer
+              <h2 className="text-xl sm:text-2xl md:text-3xl text-white/80 font-medium mb-6 mt-4">
+                UI/UX Designer
               </h2>
               <p className="text-white/90 text-base sm:text-lg leading-relaxed mb-8">
                 Creating intuitive digital experiences that blend beautiful design 
