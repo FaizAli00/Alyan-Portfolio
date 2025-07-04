@@ -27,7 +27,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'Fashion Boutique Inc.',
-      role: 'Lead UI/UX Designer & Frontend Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const Projects = () => {
       link: '',
       year: '2022',
       client: 'Urban Styles Co.',
-      role: 'Frontend Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'Velocity Bikes',
-      role: 'UI Designer & Frontend Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 4,
@@ -87,7 +87,7 @@ const Projects = () => {
       link: '',
       year: '2022',
       client: 'First Regional Bank',
-      role: 'UX Designer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 5,
@@ -107,7 +107,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'Wise Analytics',
-      role: 'Full-stack Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 6,
@@ -127,7 +127,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'AdminSoft Inc.',
-      role: 'Frontend Lead'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 7,
@@ -147,7 +147,7 @@ const Projects = () => {
       link: '',
       year: '2022',
       client: 'TechNova',
-      role: 'Frontend Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 8,
@@ -167,7 +167,7 @@ const Projects = () => {
       link: '',
       year: '2021',
       client: 'ConnectApp',
-      role: 'iOS Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 9,
@@ -187,7 +187,7 @@ const Projects = () => {
       link: '',
       year: '2022',
       client: 'PixelPerfect Agency',
-      role: 'Web Designer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 10,
@@ -207,7 +207,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'Prime Properties',
-      role: 'Mobile Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 11,
@@ -227,7 +227,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'SaaSify',
-      role: 'Frontend Developer'
+      role: 'UI/UX and Graphic Designer'
     },
     {
       id: 12,
@@ -247,7 +247,7 @@ const Projects = () => {
       link: '',
       year: '2023',
       client: 'Studio Nova',
-      role: 'Creative Developer'
+      role: 'UI/UX and Graphic Designer'
     }
   ];
 
