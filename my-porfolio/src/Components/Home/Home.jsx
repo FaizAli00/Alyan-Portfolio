@@ -50,9 +50,9 @@ const Home = () => {
             {/* <div className="absolute rounded-full bg-gradient-to-br from-[#0a0a1a] via-[#0d1125] to-[#0a0e1a] opacity-90 blur-[50px] -z-10" /> */}
             
             {/* Profile Image Circle */}
-            <div className="relative w-[370px] h-[370px] overflow-hidden">
+            <div className="relative w-[450px] h-[450px] overflow-hidden">
               <img
-                src="/img/one.png"
+                src="/img/me.png"
                 alt="Aliyan Ali"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
